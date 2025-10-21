@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+   font-family: "Open Sans", sans-serif; 
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    url('./img/DSC01100-Edit_FullSize.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero__title {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.hero__description {
+    color: #fff;
+    max-width: 65ch;
+    font-size: 1rem;
+}
+
+@media (max-width:586px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    .hero__description {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:475px) {
+    .hero__title {
+        font-size: 2.2rem;
+    }
+    .hero__description {
+        font-size: 0.6rem;
+    }
+}
