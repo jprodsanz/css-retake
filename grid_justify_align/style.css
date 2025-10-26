@@ -1,0 +1,46 @@
+/* one dimensional > flexbox  */
+/* two dimensional > grid  */
+/* centering text > no layout tool  */
+
+/* layout tools such as flexbox & grid should be use to build */
+/* components, components components!!!  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+     font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    border: 10px solid black;
+    margin-top: 5rem;
+    /* grid layout */
+    display: grid;
+    grid-template-rows:repeat(4, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+
+
+}
+
+.item {
+    background-color: pink;
+    border: 10px solid red;
+    padding: 0.5rem;
+}
+
+.item-1 {
+    /* justify-self: center;
+    align-self: center; */
+    place-self:stretch ;
+}
