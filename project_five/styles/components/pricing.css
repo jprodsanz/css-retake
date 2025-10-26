@@ -83,6 +83,7 @@
 @media (min-width: 1024px) {
     .pricing__grid-container {
         display: grid;
+        grid-template-columns: repeat(4,1fr);
         grid-template-areas: 
         'css css css jav' 
         'rea rea nex nex';
