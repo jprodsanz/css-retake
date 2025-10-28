@@ -1,0 +1,47 @@
+/* all of our css resets go in here */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em +0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 2rem;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+    justify-content: center;
+    align-items: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.list:not(:first-child){
+    color:red;
+}
