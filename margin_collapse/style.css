@@ -1,0 +1,29 @@
+/* all of our css resets go in here */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.title-1 {
+    border: 5px solid red;
+    background-color: lightpink;
+    margin-bottom: 20px;
+}
+.title-2 {
+    border: 5px solid red;
+    background-color: lightblue;
+    margin-top: 40px;
+}
+
+/* margin collapsing takeaways */
+/* margin collapsing only happens in block level elements */
+/* margin collapsing does not happen when using flexbox or grid  */
+/* in the case of margin collapsing the highest margin always wins */
+/* margin collapsing is bad, avoided at all cost  */
