@@ -1,10 +1,4 @@
 /* all of our css resets go in here */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 * {
     margin: 0;
     padding: 0;
