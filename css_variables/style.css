@@ -1,0 +1,43 @@
+/* :root is a CSS pseudo-class selector that targets the root element of your HTML document. */
+/* In HTML, the root element is always <html>. */
+
+:root {
+    --clr-dark: #020617;
+    --clr-light:#f1f5f9;
+    --clr-slate: #94a3b8;
+    --clr-primary:#e11d48; 
+
+}
+
+
+/* all of our css resets go in here */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--clr-dark)
+
+}
+
+.title {
+    color:var(--clr-light);
+}
+
+.description{
+    color:var(--clr-slate);
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-primary);
+}
