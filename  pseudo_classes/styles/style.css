@@ -45,3 +45,37 @@ button {
 .list:not(:first-child){
     color:red;
 }
+
+.checkbox {
+    width: 1rem;
+    height: 1rem;
+    accent-color: green;
+}
+
+.checkbox:checked + label {
+    color: green;
+}
+.wrapper  {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input {
+    font: inherit;
+}
+
+.input:invalid {
+    border: 1px solid red;
+    color: red;
+}
+.input:invalid + label {
+    color: red;
+}
+.input:valid {
+    border: 1px solid green;
+    color: green;
+}
+.input:valid + label {
+    color: green;
+}
